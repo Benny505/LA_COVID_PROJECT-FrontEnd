@@ -23,7 +23,6 @@ function CreateComment(comment) {
         commentDiv.appendChild(commentBody);
 
         document.querySelector("div[name='comment-holder']").appendChild(commentDiv);
-        console.log("Ran1");
         regardless = true;
     } else {
         let commentDiv = document.createElement("div");
@@ -36,13 +35,12 @@ function CreateComment(comment) {
         commentDiv.appendChild(commentName);
 
         document.querySelector("div[name='comment-holder']").appendChild(commentDiv);
-        console.log("Ran2");
     }
 }
 
 // FROM HERE ON IS THE SERVER STUFF
 function GetCommentsFromFamily() {
-    fetch('http://localhost:3000/family', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/family', {
         method: 'get',
         headers: {'content-type': 'application/json'},
       })
@@ -52,7 +50,7 @@ function GetCommentsFromFamily() {
 }
 
 function GetCommentsFromSchool() {
-    fetch('http://localhost:3000/school', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/school', {
         method: 'get',
         headers: {'content-type': 'application/json'},
       })
@@ -62,7 +60,7 @@ function GetCommentsFromSchool() {
 }
 
 function GetCommentsFromHobbies() {
-    fetch('http://localhost:3000/hobbies', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/hobbies', {
         method: 'get',
         headers: {'content-type': 'application/json'},
       })
@@ -72,7 +70,7 @@ function GetCommentsFromHobbies() {
 }
 
 function GetCommentsFromLearning() {
-    fetch('http://localhost:3000/learning', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/learning', {
         method: 'get',
         headers: {'content-type': 'application/json'},
       })
@@ -82,7 +80,7 @@ function GetCommentsFromLearning() {
 }
 
 function GetCommentsFromExcercise() {
-    fetch('http://localhost:3000/excercise', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/excercise', {
         method: 'get',
         headers: {'content-type': 'application/json'},
       })
@@ -92,7 +90,7 @@ function GetCommentsFromExcercise() {
 }
 
 function GetCommentsFromOverall() {
-    fetch('http://localhost:3000/overall', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/overall', {
         method: 'get',
         headers: {'content-type': 'application/json'},
       })

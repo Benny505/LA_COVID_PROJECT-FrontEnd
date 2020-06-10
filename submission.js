@@ -23,7 +23,7 @@ const body = document.querySelector("body");
 // THIS SECTION SENDS DATA TO BACK END
 // ***************************************************************************
 function SendObjectToFamily(objectToSend) {
-    fetch('http://localhost:3000/family', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/family', {
         method: 'post',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({input: {
@@ -35,7 +35,7 @@ function SendObjectToFamily(objectToSend) {
 }
 
 function SendObjectToSchool(objectToSend) {
-    fetch('http://localhost:3000/school', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/school', {
         method: 'post',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({input: {
@@ -47,7 +47,7 @@ function SendObjectToSchool(objectToSend) {
 }
 
 function SendObjectToHobbies(objectToSend) {
-    fetch('http://localhost:3000/hobbies', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/hobbies', {
         method: 'post',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({input: {
@@ -59,7 +59,7 @@ function SendObjectToHobbies(objectToSend) {
 }
 
 function SendObjectToLearning(objectToSend) {
-    fetch('http://localhost:3000/learning', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/learning', {
         method: 'post',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({input: {
@@ -71,7 +71,7 @@ function SendObjectToLearning(objectToSend) {
 }
 
 function SendObjectToExcercise(objectToSend) {
-    fetch('http://localhost:3000/excercise', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/excercise', {
         method: 'post',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({input: {
@@ -83,7 +83,7 @@ function SendObjectToExcercise(objectToSend) {
 }
 
 function SendObjectToOverall(objectToSend) {
-    fetch('http://localhost:3000/overall', {
+    fetch('https://gentle-ridge-58844.herokuapp.com/overall', {
         method: 'post',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({input: {
