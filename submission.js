@@ -165,7 +165,7 @@ function SetInputObject() {
         spamLock = true;
         setTimeout(TurnOffSpamLock, 60000);
 
-        if (name.length > 0) {
+        if (nameInput.value.length > 0) {
             submissionObject.name = nameInput.value;
         }
         submissionObject.body = bodyInput.value;
