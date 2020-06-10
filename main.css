@@ -1,0 +1,183 @@
+.menuBar {
+	position: sticky;
+	box-shadow: 0px 4px 8px 0px rgba( 0, 0, 0, 1);
+	z-index: 1;
+}
+
+.textGradient {
+	background: linear-gradient(#96CCFF, #9EEBCF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	background-size: 200% 200%;
+	animation: titleGradientAnim 5s ease infinite;
+}
+
+.linkSpacingFromTop {
+	margin-top: 20px;
+}
+
+.hoverable:hover .triangle-up {
+	cursor: pointer;
+	position: relative;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid #9EEBCF;
+	right: 10px;
+	z-index: 2;
+}
+
+
+.hoverable:hover .rectangle {
+	position: relative;
+	background-color: #9EEBCF;
+	z-index: 0;
+	width: 300px;
+	right: 150px;
+	box-shadow: 0px 4px 8px 2px rgba( 0, 0, 0, 1);
+	animation-name: descriptionBoxAnim;
+	animation-duration: 1s;
+	animation-fill-mode: forwards; 
+}
+
+.hoverable:hover .description {
+	padding: 15px;
+	margin: 0px;
+	animation-name: textIn;
+	animation-duration: 1s;
+	animation-fill-mode: forwards; 
+}
+
+.triangleSpacing {
+	position: relative;
+	width: 0px;
+    left: 50%;
+}
+
+.cursorPointer {
+	cursor: pointer;
+}
+
+.initialFontSize {
+	font-size: 0px;
+}
+
+.headlineContainer {
+	width: 600px;
+}
+
+.inputFieldset {
+	position: relative;
+	background-color: #137752;
+	width: 50px;
+	height: 400px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.nameInput {
+	outline: none;
+	border-color: #137752;
+	padding-left: 10px;
+}
+
+.inputField {
+	resize: none;
+	padding: 10px;
+	border-color: #137752;
+	outline: none;
+}
+
+.submitButton {
+	position: absolute;
+	border-color: #137752;
+	right: 290px;
+}
+
+.submitDiv {
+	position: absolute;
+	bottom: 20px;
+	width: 100px;
+	height: 20px;
+}
+
+.nullElement {
+	display: none;
+}
+
+.warning {
+	position: absolute;
+
+	top: -250px;
+	left: -250px;
+
+	height: auto;
+	width: 500px;
+
+	z-index: 100;
+
+	box-shadow: 0px 4px 8px 2px rgba( 0, 0, 0, 1);
+}
+
+.descriptionDiv {
+	position: relative;
+	padding: 1px;
+	width: 80%;
+	margin-left: 5%;
+	margin-bottom: 40px;
+	height: auto;
+	box-shadow: 0px 4px 8px 2px rgba( 0, 0, 0, 1);
+}
+
+.commentDiv {
+	margin-left: 5%;
+	margin-bottom: 50px;
+	padding: 10px;
+
+	width: 80%;
+	height: auto;
+
+	box-shadow: 0px 4px 8px 2px rgba( 0, 0, 0, 1);
+}
+
+.commentHeader {
+	margin-top: 10px; 
+	margin-bottom: 10px;
+}
+
+.commentLine {
+	margin: 0px; 
+	border-color: #137752; 
+	margin-bottom: 10px;
+}
+
+.commentBody {
+	margin: 0px;
+}
+
+@keyframes descriptionBoxAnim {
+	from {
+		height: 0px;
+	}
+
+	to {
+		height: 150px;
+	}
+}
+
+@keyframes titleGradientAnim { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+@keyframes textIn {
+	from {
+		font-size: 0px;
+	}
+
+	to {
+		font-size: initial;
+	}
+}

@@ -1,0 +1,37 @@
+/*this is the only stylesheet for the input element*/
+/*the main one has some stuff for it but it is only for the example one*/
+/*that is why there is no reference to this on the main page*/
+
+.inputDivReal {
+    position: relative;
+    margin-top: 10px;
+    padding-left: 5%;
+}
+
+.inputFieldsetReal {
+	position: relative;
+	background-color: #137752;
+	width: 50px;
+	height: 400px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.nameInputReal {
+	outline: none;
+	border-color: #137752;
+	padding-left: 10px;
+}
+
+.inputFieldReal {
+	resize: none;
+	padding: 10px;
+	border-color: #137752;
+	outline: none;
+}
+
+.submitButtonReal {
+	position: absolute;
+	border-color: #137752;
+	left: 387px;
+}

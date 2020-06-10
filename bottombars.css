@@ -1,0 +1,41 @@
+.bottomBarHome {
+	position: relative;
+	box-shadow: 0px -4px 8px 0px rgba( 0, 0, 0, 1);
+	top: 294px;
+}
+
+.bottomBarFamily {
+	position: relative;
+	box-shadow: 0px -4px 8px 0px rgba( 0, 0, 0, 1);
+	margin-top: 50px;
+}
+
+.bottomBarSchool {
+	position: relative;
+	box-shadow: 0px -4px 8px 0px rgba( 0, 0, 0, 1);
+	margin-top: 50px;
+}
+
+.bottomBarHobbies {
+	position: relative;
+	box-shadow: 0px -4px 8px 0px rgba( 0, 0, 0, 1);
+	margin-top: 50px;
+}
+
+.bottomBarLearning {
+	position: relative;
+	box-shadow: 0px -4px 8px 0px rgba( 0, 0, 0, 1);
+	margin-top: 50px;
+}
+
+.bottomBarExercise {
+	position: relative;
+	box-shadow: 0px -4px 8px 0px rgba( 0, 0, 0, 1);
+	margin-top: 50px;
+}
+
+.bottomBarOverall {
+	position: relative;
+	box-shadow: 0px -4px 8px 0px rgba( 0, 0, 0, 1);
+	margin-top: 50px;
+}
