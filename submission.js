@@ -102,7 +102,7 @@ function SendObjectToServer(objectToSend, id) {
             break;
         case "Hobbies": SendObjectToHobbies(objectToSend);
             break;
-        case "Learning": SendObjectLearning(objectToSend);
+        case "Learning": SendObjectToLearning(objectToSend);
             break;
         case "Excercise": SendObjectToExcercise(objectToSend);
             break;
